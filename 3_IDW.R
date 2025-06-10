@@ -1,4 +1,4 @@
-idw_para_munis <- function(df, munis, power, max_radius, max_vecinos) {
+idw_para_munis_v2 <- function(df, munis, power, max_radius, max_vecinos) {
   # 1. Preparar los datos espaciales
   puntos <- df %>%
     st_as_sf(coords = c("longitud", "latitud"), crs = 4326) %>%
